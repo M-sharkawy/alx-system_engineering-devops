@@ -1,0 +1,16 @@
+#!/bin/env bash
+# Bash script that displays:
+#The content of the current directory
+#In a list format
+#Where only the part of the name after the first dash is displayed
+
+
+#!/usr/bin/env bash
+# Bash script that displays:
+# - The content of the current directory in list format
+# - Only the part of the name after the first dash
+
+for line in *
+do
+    echo "$line" | cut -d "-" -f 2
+done
