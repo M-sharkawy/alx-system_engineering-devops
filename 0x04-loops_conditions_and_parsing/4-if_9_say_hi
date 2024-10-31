@@ -1,0 +1,12 @@
+#!/bin/env bash
+#This script is displaying "Best School" 10 times
+c=0
+while [ $c -lt 10 ]
+do
+    echo "Best School"
+    if [ $c == 8 ]
+    then
+        echo "Hi"
+    fi
+    ((c++))
+done
