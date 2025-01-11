@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#dissable passwd authentication from a ssh-config file
+Host 98.98.98.98
+    PasswordAuthentication no
+    IdentifyFile ~/.ssh/school
