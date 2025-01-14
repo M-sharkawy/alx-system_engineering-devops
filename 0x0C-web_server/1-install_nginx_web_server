@@ -2,7 +2,6 @@
 # Installs, configures, and starts the server
 sudo apt-get update
 sudo apt-get install -y nginx
-sudo chown -R ubuntu /var/www
 sudo ufw allow "Nginx HTTP"
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo service nginx start
