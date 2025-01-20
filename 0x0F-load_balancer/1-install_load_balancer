@@ -10,13 +10,10 @@ echo '
 frontend developmentdesign.tech
         bind *:80
         mode http
-        timeout client 60s
         default_backend web_servers
 
 backend web_servers
         balance roundrobin
-        timeout connect 10s
-        timeout server 100s
         mode http
         server 659303-web-01 100.26.253.64:80 check
         server 659303-web-02 54.152.64.223:80 check
