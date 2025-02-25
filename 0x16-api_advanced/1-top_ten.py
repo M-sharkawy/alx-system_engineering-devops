@@ -8,9 +8,9 @@ def top_ten(subreddit):
     """Return the first 10 hot posts title of subreddit"""
     limit = 10
     posts = []
-    url = "https://www.reddit.com/r/{}/{}.json?Limit={}".format(subreddit,"top",limit)
+    url = f"https://www.reddit.com/r/{subreddit}/top.json?Limit={limit}"
     headers = {
-        "Users-Agent": "linux:0x16.api.advanced:v1.0.0"
+        "Users-Agent": "Mozilla/5.0"
     }
 
     response = requests.get(url, headers=headers, allow_redirects=False)
