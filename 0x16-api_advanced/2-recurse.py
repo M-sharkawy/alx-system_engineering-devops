@@ -6,7 +6,7 @@ import requests
 
 def recurse(subreddit, hot_list=[], after=None):
     """Return the list recersively"""
-    url =  f"https://www.reddit.com/r/{subreddit}/hot.json?after={after}"
+    url = f"https://www.reddit.com/r/{subreddit}/hot.json?after={after}"
     headers = {
         "Users-Agent": "Mozilla/5.0"
     }
