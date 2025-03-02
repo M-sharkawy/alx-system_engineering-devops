@@ -38,7 +38,7 @@ To avoid another unexpected traffic-induced crisis, here’s what we’re doing:
 4. Improve coordination between marketing and engineering (because surprise traffic spikes = bad).
 5. Run regular load tests to simulate traffic spikes.
 
-### Bonus: A Handy Diagram 🖼️
+### A Handy Diagram 🖼️
 
  🚀 Marketing Team Hits "Send"
                       |
