@@ -6,15 +6,12 @@ add-apt-repository ppa:vbernat/haproxy-3.0 -y
 apt-get -y update
 apt-get install haproxy=3.0.\*
 
-echo '
-frontend developmentdesign.tech
+echo 'frontend developmentdesign.tech
         bind *:80
-        mode http
         default_backend web_servers
 
 backend web_servers
         balance roundrobin
-        mode http
         server 659303-web-01 100.26.253.64:80 check
         server 659303-web-02 54.152.64.223:80 check
 ' | sudo tee -a /etc/haproxy/haproxy.cfg
